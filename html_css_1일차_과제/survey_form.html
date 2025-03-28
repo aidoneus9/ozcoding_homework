@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <meta />
+    <title>shi_survey_form</title>
+  </head>
+  <body>
+    <header>
+      <!--header, main, footer: semantic tags-->
+      <h1>사회인 게임클럽 설문조사</h1>
+      <p>
+        설문에 참여하신 분들 중 추첨을 통해 총 다섯 분께 '사회인 게임클럽'
+        유튜브 멤버십 선물이 지급될 예정입니다.
+      </p>
+    </header>
+    <hr />
+    <main>
+      <form action="shigameclub.com" method="post">
+        <fieldset>
+          <legend><strong>개인정보</strong></legend>
+          <label
+            >닉네임&nbsp;<input
+              type="text"
+              name="name"
+              placeholder="카페에서 사용 중인 이름을 입력해 주세요." /></label
+          ><br />
+          <label
+            >전화번호&nbsp;<input
+              type="tel"
+              name="phone_number"
+              placeholder="핸드폰 번호를 입력해 주세요."
+          /></label>
+        </fieldset>
+        <fieldset>
+          <legend><strong>설문</strong></legend>
+          <p>
+            아래의 '사회인 게임클럽'의 영상 중 가장 재미있었던 영상 제목은
+            무엇입니까?
+          </p>
+          <!--radio button: name으로 묶어주기-->
+          <label
+            ><input type="radio" name="title" />인형 공장 퇴사하고 개발팀으로
+            이직했습니다.[1부 Dollmare/ 2부 DEBUG DEADLINE]</label
+          ><br />
+          <label
+            ><input type="radio" name="title" />내 딸이 왕이 될 상인가 장산범이
+            될 상인가?[프린세스메이커]</label
+          ><br />
+          <label
+            ><input type="radio" name="title" />우리 협동 정상영업 합니다[체인드
+            투게더]</label
+          ><br />
+          <label
+            ><input type="radio" name="title" />빙하기 최악의 지도자[프로스트
+            펑크]</label
+          ><br />
+          <label
+            ><input type="radio" name="title" />뽑아주신다면 구두라도
+            핥겠습니다[겟 투 워크]</label
+          ><br />
+          <label
+            ><input type="radio" name="title" />기타 영상&nbsp;&nbsp;<textarea
+              rows="1"
+            ></textarea>
+          </label>
+          <p>
+            '사회인 게임클럽'의 컨텐츠 중 가장 많이 보는 영상 유형은 무엇입니까?
+          </p>
+          <label><input type="checkbox" name="type" />구라베의 토크 방송</label>
+          <label><input type="checkbox" name="type" />망난이의 공포 게임</label>
+          <label
+            ><input type="checkbox" name="type" />송몽숙의 몰아보는 스토리
+            게임</label
+          >
+          <label
+            ><input type="checkbox" name="type" />강초당과 장폰주의 2인 협동
+            게임</label
+          >
+        </fieldset>
+        <fieldset>
+          <legend><strong>횐님의 한 마디</strong></legend>
+          <textarea
+            cols="60"
+            rows="3"
+            name="comment"
+            placeholder="예: 망난아 공반인 만들어줘서 고마워 ~사회인 게임클럽 많관부 좋댓구알~"
+          ></textarea>
+        </fieldset>
+        <br />
+        <button>제출하기</button>
+      </form>
+    </main>
+
+    <hr />
+    <footer>
+      <p>
+        고맙습니다. 기프티콘 추첨 결과는 4월 1일에 입력해주신 핸드폰 번호로
+        발송됩니다.<br /><br />
+        &copy;&nbsp;사회인 게임클럽
+      </p>
+    </footer>
+  </body>
+</html>
