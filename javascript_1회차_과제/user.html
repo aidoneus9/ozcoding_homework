@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>user</title>
+    <style>
+      #name {
+        color: darkgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="name"></h1>
+    <p id="movie"></p>
+    <p id="poem"></p>
+
+    <script>
+      const nameElement = document.querySelector("#name");
+      let name = prompt("이름");
+      nameElement.textContent = name;
+
+      const movieElement = document.querySelector("#movie");
+      let movie = prompt("가장 좋아하는 영화");
+      movieElement.textContent = `가장 좋아하는 영화: ${movie}`;
+
+      document.querySelector(
+        "#poem"
+      ).textContent = `가장 좋아하는 시: "${prompt("가장 좋아하는 시")}"`;
+    </script>
+  </body>
+</html>
