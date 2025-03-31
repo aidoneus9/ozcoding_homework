@@ -1,0 +1,45 @@
+/* 전체 가운데 정렬 */
+* {
+  text-align: center;
+}
+
+/* 전체 배경색 지정 */
+html {
+  background-color: #dadada;
+  font-size: 16px;
+}
+
+/* 화면의 크기에 맞춰 블록 확장 (수평선) 제어 */
+body {
+  width: 640px;
+  /*블록 레벨 요소에 width 지정 시 content 줄인 만큼 width를 늘림 */
+  margin: auto; /* 너비에서 남는 여백을 동일하게 분배 (가운데 정렬 효과) */
+}
+
+h1,
+h2 {
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  color: #2c4c3b;
+}
+
+h2 {
+  color: #545454;
+}
+
+p,
+ol {
+  font-family: "Shadows Into Light Two", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
