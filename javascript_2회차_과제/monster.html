@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>monster</title>
+    <link rel="icon" href="monster.png" type="image/png" sizes="16x16" />
+  </head>
+  <!-- favicon -->
+  <body>
+    <div id="container"></div>
+
+    <script>
+      // 게임 시작
+      let monsterHP = 100;
+      const container = document.getElementById("container");
+      const h1 = document.createElement("h1");
+      h1.textContent = "👾 Start Game 👾";
+      container.appendChild(h1);
+
+      let attackDamage = parseInt(prompt("👽 damage: "));
+      let attackCount = 0;
+
+      if (attackDamage > 0) {
+        while (monsterHP > 0) {
+          monsterHP -= attackDamage; // HP 감소
+          monsterHP > 0 ? (monsterHP = monsterHP) : (monsterHP = 0);
+
+          attackCount += 1; // 때린 횟수 증가
+
+          const p = document.createElement("p");
+          p.textContent = `You attacked the monster ${attackCount} times 🧌🗡️`;
+          container.append(p);
+
+          const strong = document.createElement("strong");
+          strong.textContent = `🧌🧪 Remaining HP: ${monsterHP}`;
+          container.append(strong);
+        }
+
+        const h2 = document.createElement("h2");
+        h2.textContent = "🦄 YOU WIN! 🦄";
+        h2.style.color = "purple";
+        h2.title = "Reload the page to play again";
+        container.appendChild(h2);
+      } else {
+        alert("🙅🏻‍♂️ Invalid Input 🙅🏻‍♂️");
+      }
+    </script>
+  </body>
+</html>
